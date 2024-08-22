@@ -1,24 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Third Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/8d8e6fc099.js" crossorigin="anonymous"></script>
 <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
             clifford: '#da373d',
-          }
-        }
-      }
+          },
+        },
+      },
     }
   </script>
+  <style>
+    .manrope-normal {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+  </style>
 </head>
-<body>
-    
+<body class="manrope-normal">
+   <header class="mb-8 lg:mb-12">
+      <nav class="max-w-screen-xl mx-auto px-3 py-5">
+        <div class="navbar bg-base-100">
+          <div class="flex-1">
+            <!-- <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-xs font-extrabold">
+                <li class="text-[#737373] hover:text-[#212121] transition-colors duration-300 ease-in-out"><a>Home</a></li>
+              <li class="text-[#737373] hover:text-[#212121] transition-colors duration-300 ease-in-out"><a>Service</a></li>
+              <li class="text-[#737373] hover:text-[#212121] transition-colors duration-300 ease-in-out"><a>Portfolio</a></li>
+              <li class="text-[#737373] hover:text-[#212121] transition-colors duration-300 ease-in-out"><a>Blogs</a></li>
+              <li class="text-[#737373] hover:text-[#212121] transition-colors duration-300 ease-in-out"><a>Contact Us</a></li>
+              </ul>
+            </div> -->
+            
+            <a class="font-extrabold text-2xl text-[#212121] text-xl"><i class="font-semibold bg-[#ABEF5F] p-1 -rotate-45 rounded-full fa-solid fa-arrow-right"></i> Rinterio</a>
+          </div>
+          <div class=" hidden lg:flex lg:justify-start lg:flex-1  ">
+            <ul class="menu menu-horizontal px-1 text-xs font-extrabold lg:flex-nowrap">
+              <li class="text-[#737373] hover:text-[#212121] transition-colors duration-300 ease-in-out"><a>Home</a></li>
+              <li class="text-[#737373] hover:text-[#212121] transition-colors duration-300 ease-in-out"><a>Service</a></li>
+              <li class="text-[#737373] hover:text-[#212121] transition-colors duration-300 ease-in-out"><a>Portfolio</a></li>
+              <li class="text-[#737373] hover:text-[#212121] transition-colors duration-300 ease-in-out"><a>Blogs</a></li>
+              <li class="text-[#737373] hover:text-[#212121] transition-colors duration-300 ease-in-out"><a>Contact Us</a></li>
+            </ul>
+          </div>
+          
+          <div class=" md:flex md:justify-end md:flex-1 md:gap-3 hidden">
+            <div class="flex gap-3">
+              <button>
+                <i class=" p-2 rounded-full bg-[#E9E9E9] text-[#737373]  fa-solid fa-magnifying-glass"></i>
+              </button>
+              <button>
+                <i class="p-2 rounded-full bg-[#E9E9E9] text-[#737373] fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+             <a class="font-extrabold text-xs btn bg-[#ABEF5F] hover:bg-[#ABEF5F]">Book Consult<i class="text-white font-semibold bg-[#1C1C1C] p-1 -rotate-45 rounded-full fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="  flex justify-end">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="right-0 menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-xs font-extrabold">
+                <li class="text-[#737373] hover:text-[#212121] transition-colors duration-300 ease-in-out"><a>Home</a></li>
+              <li class="text-[#737373] hover:text-[#212121] transition-colors duration-300 ease-in-out"><a>Service</a></li>
+              <li class="text-[#737373] hover:text-[#212121] transition-colors duration-300 ease-in-out"><a>Portfolio</a></li>
+              <li class="text-[#737373] hover:text-[#212121] transition-colors duration-300 ease-in-out"><a>Blogs</a></li>
+              <li class="text-[#737373] hover:text-[#212121] transition-colors duration-300 ease-in-out"><a>Contact Us</a></li>
+              </ul>
+            </div>
+            
+            
+          </div>
+        </div>
+      </nav>
+      <section  class="max-w-screen-xl mx-auto px-3 py-5">
+        <div class="flex flex-col justify-center items-center space-y-5">
+          <div>
+            <img src="assets/banner.png" alt="">
+          </div>
+          <div class="flex flex-col justify-center items-center space-y-4">
+            <h1 class="md:text-[40px] text-[30px] lg:text-[64px] font-extrabold text-[#212121] text-center">A barn house of this design has a striking appearance</h1>
+            <p class="md:mx-10 lg:px-12 text-[14px] md:text-[16px] text-[#494949] text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <a class="font-extrabold items-center text-center text-xs btn bg-[#d4f6ae] hover:bg-[#d4f6ae]">View Details<i class="text-white font-semibold bg-[#ABEF5F] p-1 -rotate-45 rounded-full fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </section>
+   </header>
+   <main>
+    <section class=" relative bg-[#f4f4f4]">
+      <div class="hidden lg:block max-w-screen-xl mx-auto pt-6 ">
+        <img src="assets/Vector.png" alt="">
+      </div>
+    </section>
+    <section class=" bg-[#f4f4f4]">
+      <div class="p-5 max-w-screen-xl mx-auto lg:flex lg:justify-around lg:gap-4 lg:items-center flex-col lg:flex-row
+      md:justify-center md:items-center space-y-4">
+        <div class="lg:w-1/2 flex flex-col justify-center items-center lg:justify-start lg:items-start">
+          <a class=" btn font-extrabold items-center text-center text-xs  bg-white hover:bg-white"><i class="fa-solid fa-arrow-right"></i>About Us</a>
+        <h2 class="mb-2 text-[24px] md:text-[32px] lg:text-[50px] font-bold text-[#212121] text-center lg:text-start">We design thoughtful, liveable spaces</h2>
+        <p class="lg:text-start text-center text-[#494949] text-[16px] mb-5">The barn house captivates with its blend of rustic  charm and 
+          modern  sophistication, featuring weathered wood, sleek metal accents.</p>
+          <div class=" flex flex-col md:flex-row lg:flex-col gap-4">
+            <div class="flex items-center p-2  rounded-lg gap-4 bg-white">
+              <div>
+                <img src="assets/commercial.png" alt="">
+              </div>
+              <div class="space-y-1 p-3">
+                <h4 class="text-[#494949] text-[16px] lg:text-[20px] font-extrabold md:text-[18px]">Commercial</h4>
+                <p class="text-[#737373] text-[16px]">The barn house captivates with its blend <br> of rustic  charm and modern.</p>
+              </div>
+            </div>
+            <div class="flex items-center p-2  rounded-lg gap-4 bg-white">
+              <div >
+                <img class="flex md:justify-center items-center" src="assets/residential.png" alt="">
+              </div>
+              <div class="space-y-1">
+                <h4 class="text-[#494949] text-[16px] lg:text-[20px] font-extrabold md:text-[18px]">Commercial</h4>
+                <p class="text-[#737373] text-[16px]">The barn house captivates with its blend <br> of rustic charm and modern.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <img src="assets/Rectangle.png" alt="">
+        </div>
+      </div>
+    </section>
+   </main>
+   <footer>
+
+   </footer>
 </body>
 </html>
